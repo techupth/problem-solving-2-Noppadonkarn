@@ -2,6 +2,22 @@
 
 const fizzBuzz = function (n) {
   //Start coding here
+  const fizzBuzzArray = []
+  for(let i=1; i<=n; i++){
+    if(i%3 === 0){ 
+      if(i%5 ===0){
+        fizzBuzzArray.push("FizzBuzz")
+      }else{
+        fizzBuzzArray.push("Fizz")
+      }
+    }else if(i%5 === 0){
+      fizzBuzzArray.push("Buzz")
+    }else(
+      fizzBuzzArray.push(String(i))
+    )
+  }
+  console.log(fizzBuzzArray)
+  return fizzBuzzArray
 };
 
 const result1 = fizzBuzz(3);
